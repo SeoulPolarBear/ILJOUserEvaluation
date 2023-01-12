@@ -13,6 +13,10 @@ eureka:
 spring:
   application:
     name: userEvaluation
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://34.170.121.78:3306/iljo_db?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
+    username: iljo
 #  rabbitmq :
 #    host : 127.0.0.1
 #    port : 5672

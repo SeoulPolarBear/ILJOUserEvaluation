@@ -16,7 +16,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/user-evaluation/")
+@RequestMapping("/userEvaluation")
+@CrossOrigin("http://localhost:3000")
 public class UserEvaluationController {
 
     UserEvaluationService userEvaluationService;

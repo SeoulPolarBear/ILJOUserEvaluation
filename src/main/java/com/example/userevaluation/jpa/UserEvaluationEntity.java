@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @Entity
@@ -42,7 +43,7 @@ public class UserEvaluationEntity implements Serializable {
     private Integer grade;
 
     @Column(nullable = false, length = 10)
-    private String createAt;
+    private Date createAt;
 
     public void putEvaluationInfo(UserEvaluationEntity userEvaluationEntity) {
         if (userEvaluationEntity.getEvaluationId() != null)
